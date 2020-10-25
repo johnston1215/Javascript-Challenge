@@ -1,2 +1,2 @@
 # Javascript-Challenge
-Final file is the cleaned final file
+Please do not use attempted bonus file
