@@ -28,8 +28,9 @@ form.on("submit", runEnter);
 
 // Complete the event handler function for the form
 function runEnter() {
-  // Prevent the page from refreshing
+  // Prevent the page from refreshing and clear table
   d3.event.preventDefault();
+  tbody.html("");
   // Select the input element and get the raw HTML node
   var inputElement = d3.select("#datetime");
   // Get the value property of the input element
@@ -37,12 +38,14 @@ function runEnter() {
   console.log(inputValue);
   var filteredData = data.filter(data => data.datetime === inputValue);
   console.log(filteredData);
+  
+  // Add to website
+  filteredData.forEach(function(sighting) {
+    var row = tbody.append("tr");
+    Object.entries(sighting).forEach(function([key, value]) {
+      var cell = row.append("td");
+      cell.text(value);
+    });
+  });
 
-  // var list = d3.select("tbody");
-
-  // // remove any children from the list
-  // list.html("");
-
-  // // append to the list
-  // list.append("li").text(filteredData);
 };
