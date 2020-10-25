@@ -1,2 +1,2 @@
 # Javascript-Challenge
-Javascript homework
+Final file is the cleaned final file
