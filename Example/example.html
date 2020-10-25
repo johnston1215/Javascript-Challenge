@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="./static/js/fighters.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./static/css/style.css">
+</head>
+
+<body class="container">
+    <div class="jumbotron">
+        <h1>Super Smash Brothers Fighters</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">Enter Character to search for: <br>
+            <input id="characterSearch" class="form-control" type="text"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-6"> Enter Series to search for:
+            <input id="seriesSearch" type="text" class="form-control"> </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <button id="characterSearchButton" class="btn btn-primary">Search</button>
+        </div>
+        <div class="col-md-3">
+            <button id="resetAllButton" class="btn btn-secondary">Reset All</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            <table class="table table-striped" id="fighters">
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>fighter name</th>
+                        <th>series</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+                <tfoot>
+
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <script src="./static/js/logic.js"></script>
+
+</body>
+
+</html>
